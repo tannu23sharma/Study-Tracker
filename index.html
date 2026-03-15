@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Study Tracker</h1>
+        <div class="Lists">
+            <ul>
+                <li><a href="#all-tasks">ALL TASKS</a></li>
+                <li><a href="#today">Today</a></li>
+                <li><a href="#tomorrow">Tomorrow</a></li>
+                <li><a href="#this-week">This Week</a></li>
+                <li><a href="#this-month">This Month</a></li>
+            </ul>
+            <div class="pomodoro">
+                <h3>Pomodoro Timer</h3>
+                <div id="timer">25:00</div>
+                <button class="play" id="start-btn">Start</button>
+                <button class="reset" id="reset-btn">Reset</button>
+            </div>
+        </div>
+        <!-- bring this div inside container -->
+         <div class="study-container">
+        <h1 class="study-time">Total Study Time</h1>
+        <p id="total-study-time">No study time recorded yet.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

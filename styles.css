@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Courier New', Courier, monospace;
+    background-color: #fffefe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    padding-bottom: 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(2, 27, 80);
+    width: 500px;
+    height: 80vh;
+    text-align: center;
+}
+.pomodoro{
+    background-color: #a0b800;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    padding: 30px;
+    color: #0c0a0a;
+    border: 1px solid #0c0a0a;
+    border-radius: 50%;
+    font-size: 1.2em;
+}
+.study-container{
+    background-color: #0c0a0a;
+    border: 1px solid #ffffff;
+    margin: 10px auto;
+}
+#title{
+    font-size: 2.2em;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 10px rgb(232, 255, 83);
+}
+.Lists{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 45vh;
+    border: 1px solid #ffffff;
+    
+}
+.Lists ul li{
+    list-style-type: none;
+    padding: 10px;
+    background-color: #3c3636;
+    margin: 5px;
+}
+.Lists ul li:hover{
+    background-color: #857f7f;
+    cursor: pointer;
+}
+.Lists ul li:active{
+    background-color: #555555;
+}
+.Lists ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 20px;
+}
+#timer{
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #f6f7f4;
+    text-shadow: 0px 0px 10px rgb(232, 255, 83);
+}
+.play, .reset, .pause{
+    border: 1px solid #0c0a0a;
+    color: #ffffff;
+    text-shadow: 0px 0px 8px rgb(0, 0, 0) ;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#start-btn{
+    background-color: #10dd10;
+}
+#reset-btn{
+    background-color: #df1717;
+}
+#pause-btn{
+    background-color: yellow;
+}
+#start-btn:hover, #reset-btn:hover, #pause-btn:hover{
+    background-color: #333333;
+    color: #ffffff;
+}
+#start-btn:active, #reset-btn:active, #pause-btn:active{
+    background-color: #6b5c5c;
+    color: #ffffff;
+}
+.study-time{
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: white;
+}
+p{
+    font-size: 1.2em;
+    color: white;
+}
+@media screen and (max-width: 600px){
+    .container{
+        width: 90%;
+        height: 90vh;
+    }
+    .Lists{
+        height: 50vh;
+    }
+    .Lists ul li a{
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .Lists ul li{
+        padding: 8px;
+    }
+    .pomodoro{
+        margin: 20px auto;
+            width: 150px;
+            height: 150px;
+            padding: 20px;
+            font-size: 0.8em;
+    }
+    .play, .reset, .pause{
+        font-size: 10px;
+        padding: 5px;
+    }
+    .study-time{
+        margin-top: 10px;
+        font-size: 1em;
+        color: white;
+    }
+    p{
+        font-size: 0.9em;
+        color: white;
+    }
+}
